@@ -1,0 +1,31 @@
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    /* Styles de base (mobile) */
+.container {
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+
+/* Adaptations pour les écrans plus larges */
+@media (min-width: 768px) {
+    .container {
+        padding: 2rem;
+        max-width: 720px;
+    }
+}
+}
+
+main {
+    flex: 1; /* Le contenu principal occupe l’espace disponible */
+}
+
+footer {
+    position: relative; /* Le footer n'est pas fixe, il suit le flux normal */
+}
